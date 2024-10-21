@@ -62,7 +62,7 @@ const About = () => {
               of the body that needs cutting.
             </p>
             <p className="border-l-2 border-primary text-lg my-5 pl-4">
-              We&apos;re a leading independent salon in Dubai, offering everything
+              We&apos;re a leading independent salon in Dubai offering everything
               from haircuts to exfoliation and
             </p>
             <button className="px-10 py-4 text-lg bg-primary text-white">
