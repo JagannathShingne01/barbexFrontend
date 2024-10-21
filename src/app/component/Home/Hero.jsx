@@ -5,6 +5,7 @@ import img from "../../public/slide1.jpg";
 import img1 from "../../public/slide2.jpg";
 import herobg from "../../public/herobg.jpg";
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
+import { Fade, FadeUp } from "../Layout/Animations";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,15 +58,17 @@ const Hero = () => {
             <div className="flex flex-col-reverse md:flex-row h-full justify-center items-center ">
               {/* Content Section: Title, Paragraph, Button */}
               <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-8 sm:px-16  space-y-4 bg-black-200 text-white">
+              <FadeUp>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">
                   {slide.title}
                 </h1>
                 <p className="text-3xl sm:text-4xl lg:text-8xl font-bold">
                   {slide.p}
                 </p>
-                <button className="px-6 mt-5 lg:mt-10 text-base lg:text-lg py-4 text-white rounded hover:bg-transparent/35 hover:text-primary bg-primary ease-in duration-300">
+                <button className="px-6 mt-5 lg:mt-10 text-base lg:text-lg py-4 text-white rounded hover:bg-transparent/35 hover:border-2 hover:border-red-950 hover:text-primary bg-primary ease-in duration-300">
                   {slide.buttonText}
                 </button>
+              </FadeUp>
               </div>
 
               {/* Image Section */}

@@ -3,8 +3,14 @@ import Image from "next/image";
 import about1 from "../../public/about1.jpg";
 import about2 from "../../public/about2.jpg";
 import about3 from "../../public/about3.jpg";
+import { Fade } from "../Layout/Animations";
+
+
 const About = () => {
+
   return (
+    
+
     <div className="lg:h-screen bg-white">
       <div className="grid grid-col-1 lg:grid-cols-2 pt-2 md:pt-10 lg:pt-20">
         <div className="flex relative mx-auto">
@@ -29,20 +35,21 @@ const About = () => {
                 className="rounded-md shadow-lg hidden md:block"
               />
             </div>
-            <div className=" mt-10 absolute z-10 left-[11rem]  md:left-64 border-8 border-white">
+            <div className=" mt-10 absolute z-10 left-[11rem] md:left-64 border-8 border-white">
               <Image
                 src={about2}
                 alt="About image tru"
                 width={400}
                 height={170}
                 objectFit="cover"
-                className="rounded-md shadow-lg h-[300px] w-[200px] md:w-[300px] lg:w-[400px] xl:w-auto md:h-[300px]  "
+                className="rounded-md shadow-lg h-[300px] w-[200px] md:w-[300px] lg:w-[300px]  md:h-[300px] xl:h-[350px]  "
               />
             </div>
           </div>
         </div>
         <div className=" flex justify-center items-center text-black px-6 md:px-12 xl:mr-20 mb-20">
           <div>
+            <Fade>
             <div className="relative">
               <div className="absolute z-10 top-20">
                 <h1 className="text-primary text-lg">About Us</h1>
@@ -65,7 +72,8 @@ const About = () => {
               We&apos;re a leading independent salon in Dubai offering everything
               from haircuts to exfoliation and
             </p>
-            <button className="px-10 py-4 text-lg bg-primary text-white">
+            </Fade>
+            <button className="px-10 py-4 text-lg bg-primary text-white ease-in hover:bg-black hover:text-primary  duration-300">
               Read More
             </button>
           </div>
