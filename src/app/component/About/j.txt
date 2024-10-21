@@ -1,0 +1,37 @@
+<div className="px-6 flex justify-center items-center relative">
+        {/* First Image */}
+        <div className=" w-[250px] h-[350px]">
+          <Image
+            src={about3}
+            alt="About image 1"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md shadow-lg"
+          />
+        </div>
+
+        {/* Second Image (slightly above and to the left of the first image) */}
+        <div className=" ">
+          <div className='w-[200px] h-[300px] '>
+          <Image
+            src={about2}
+            alt="About image 2"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md shadow-lg"
+          />
+          </div>
+           <div className="w-[180px] h-[190px] ">
+          <Image
+            src={about1}
+            alt="About image 3"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md shadow-lg"
+          />
+        </div>
+        </div>
+
+        {/* Third Image (above the second image, not overlapping) */}
+       
+      </div>
