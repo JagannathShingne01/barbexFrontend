@@ -57,12 +57,12 @@ const About = () => {
             </div>
 
             <p className="text-base mt-32">
-              Haircut" is a term used to describe when a person removes the hair
+              Haircut&quot; is a term used to describe when a person removes the hair
               on their head. This is done to allow for better access to the part
               of the body that needs cutting.
             </p>
             <p className="border-l-2 border-primary text-lg my-5 pl-4">
-              We're a leading independent salon in Dubai, offering everything
+              We&apos;re a leading independent salon in Dubai, offering everything
               from haircuts to exfoliation and
             </p>
             <button className="px-10 py-4 text-lg bg-primary text-white">
