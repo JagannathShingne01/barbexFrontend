@@ -6,9 +6,9 @@ import about3 from "../../public/about3.jpg";
 const About = () => {
   return (
     <div className="lg:h-screen bg-white">
-      <div className="grid grid-col-1 lg:grid-cols-2 pt-10 lg:pt-20">
+      <div className="grid grid-col-1 lg:grid-cols-2 pt-2 md:pt-10 lg:pt-20">
         <div className="flex relative mx-auto">
-          <div className=" mt-10 ml-14 overflow-hidden">
+          <div className=" mt-10 ml-4 md:ml-14 overflow-hidden">
             <Image
               src={about3}
               alt="About hair dry"
@@ -46,7 +46,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute z-10 top-20">
                 <h1 className="text-primary text-lg">About Us</h1>
-                <h2 className=" text-3xl md:text-5xl mt-2">
+                <h2 className=" text-3xl md:text-5xl mt-2 ">
                   Best Haircut Salons For Men and Women
                 </h2>
               </div>
@@ -56,7 +56,7 @@ const About = () => {
               </h2>
             </div>
 
-            <p className="text-base mt-32">
+            <p className="text-base sm:mt-24 mt-32 md:mt-32">
               Haircut&quot; is a term used to describe when a person removes the hair
               on their head. This is done to allow for better access to the part
               of the body that needs cutting.
